@@ -1,0 +1,18 @@
+.researcher {
+    background-color: silver;
+    --name-color: #333;
+    --orga-color: crimson;
+    --jobs-color: aqua;
+}
+
+.name {
+    color: var(--name-color);
+}
+
+.orga {
+    color: var(--orga-color);
+}
+
+.jobs {
+    color: var(--jobs-color);
+}
