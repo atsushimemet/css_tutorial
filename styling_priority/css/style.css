@@ -1,0 +1,15 @@
+body {
+    color: crimson;
+}
+
+.blue-text {
+    color: blue !important;
+}
+
+.pink-text {
+    color: pink;
+}
+
+#title {
+    color:aliceblue;
+}
