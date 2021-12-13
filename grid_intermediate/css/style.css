@@ -1,0 +1,62 @@
+.container {
+    border: 5px;
+    border-style: solid;
+    background-color: gray;
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: 5px;
+    border-style: solid;
+    background-color: blue;
+    display: grid;
+    border-color: red;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.container-center {
+    justify-items: center;
+    align-items: center;
+}
+
+.container-grid-area {
+    grid-template-areas:
+        "header header header"
+        "advert content content"
+        "footer footer footer";
+}
+
+.container-func-repeat {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.container-func-minmax {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, minmax(90px,1fr));
+}
+
+.d-default{
+    background-color: salmon;
+}
+
+.d5 {
+    background-color: teal;
+    justify-self: center;
+    align-self: center;
+}
+
+.d8 {
+    background-color: gold;
+    grid-column: 2 / 4;
+}
+
+.content {
+    grid-area: content;
+}
+
+.content-2 {
+    grid-area: 2/2/3/4;
+}
